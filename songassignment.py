@@ -23,7 +23,7 @@ def display_menu():
 
 choice = input(">>> ").upper()
 songreader = open('Songs.csv')
-songs = list(cav.reader(songreader, delimiter=','))
+songs = list(csv.reader(songreader, delimiter=','))
 
     if choice =="L":
         song_list= copy.copy(songs)
@@ -71,6 +71,7 @@ songs = list(cav.reader(songreader, delimiter=','))
 
     elif choice =="Q":
         print("Thank you for your time")
+        
 
 
     else:
